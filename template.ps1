@@ -1,3 +1,10 @@
+# Importing Required Assemblies
+Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Drawing
+Add-Type -AssemblyName System.Net.Http
+
+############################################################################################################################################
+
 # User-Configurable Variables
 $commandName = 'dirsearch'
 $formTitle = 'Dirsearch Scanner by Robot'
@@ -22,11 +29,6 @@ $commandOptions = @(
 
 
 ############################################################################################################################################
-
-# Importing Required Assemblies
-Add-Type -AssemblyName System.Windows.Forms
-Add-Type -AssemblyName System.Drawing
-Add-Type -AssemblyName System.Net.Http
 
 # Function Definitions
 function Download-Image($url, $path) {
