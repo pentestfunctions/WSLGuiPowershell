@@ -17,7 +17,17 @@ WSLGuiPowershell is a PowerShell script designed to create a simple graphical us
 - PowerShell 5.1 or higher.
 - Internet connection (for downloading images).
 
-## Installation
+## Installation v1
+
+1. Copy the code directly to Powershell ISE on Windows from 
+   ```bash
+   https://raw.githubusercontent.com/pentestfunctions/WSLGuiPowershell/main/template.ps1
+   ```
+   
+2. Edit the variables and voila.
+
+
+## Installation v2
 
 1. Clone the repository:
    ```bash
