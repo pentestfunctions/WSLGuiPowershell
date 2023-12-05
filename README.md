@@ -30,7 +30,7 @@ WSLGuiPowershell is a PowerShell script designed to create a simple graphical us
 1. Open PowerShell and navigate to the directory containing the script.
 2. To run the script, type the following command:
    ```powershell
-   .\\template.ps1
+   .\template.ps1
    ```
 3. A GUI window will appear, allowing you to interact with the specified command-line tool through a graphical interface.
 
@@ -53,7 +53,3 @@ To enable running the script with a double click:
 ## Contributing
 
 Contributions to improve WSLGuiPowershell are welcome. Feel free to fork the repository and submit pull requests.
-
-## License
-
-This project is licensed under [specify license]. See the LICENSE file for details.
