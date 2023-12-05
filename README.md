@@ -60,6 +60,32 @@ To enable running the script with a double click:
    ftype Microsoft.PowerShellScript.1="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -File "%1" %*
    ```
 
+
+### Modifying for your uses
+```bash
+# User-Configurable Variables
+$commandName = 'dirsearch'
+$formTitle = 'Dirsearch Scanner by Robot'
+$formWidth = 350  # Width of the entire application
+$formHeight = 600 # Height of the entire application
+$formSize = New-Object System.Drawing.Size($formWidth, $formHeight)
+$optionsListViewWidth = 300  # Width of the options box
+$optionsListViewHeight = 80 # Height of the options box
+$imageUrl = "https://github.com/pentestfunctions/konsole-quickcommands/raw/main/konsole_commands.png" # Make sure it's a PNG image
+$pictureBoxSize = New-Object System.Drawing.Size(280, 200) # Height, Width of the image downloaded
+$initialControlY = 220
+$domainRegex = '^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$' # Regex for matching a domain
+$ipRegex = '^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$' # Regex for matching an IP
+
+
+# Option is for command arguments, Description for what that argument does and Position to be Before or After the domain
+$commandOptions = @(
+    @{Option = '-u'; Description = 'Target URL'; Position = 'Before'},
+    @{Option = '-e'; Description = 'Extensions'; Position = 'After'}
+    # Add more command specific options here...
+)
+```
+
 ## Contributing
 
 Contributions to improve WSLGuiPowershell are welcome. Feel free to fork the repository and submit pull requests.
