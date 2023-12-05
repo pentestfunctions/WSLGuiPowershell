@@ -20,9 +20,9 @@ WSLGuiPowershell is a PowerShell script designed to create a simple graphical us
 ## Installation
 
 1. Clone the repository:
-   \\\bash
+   ```bash
    git clone https://github.com/pentestfunctions/WSLGuiPowershell.git
-   \\\
+   ```
 2. Navigate to the cloned directory.
 
 ## Usage
@@ -36,7 +36,7 @@ WSLGuiPowershell is a PowerShell script designed to create a simple graphical us
 
 ### Configuring the Script
 
-- Edit the \`template.ps1\` file to configure the script for your specific command-line tool.
+- Edit the `template.ps1` file to configure the script for your specific command-line tool.
 - Modify the user-configurable variables at the beginning of the script to customize the GUI elements and functionality.
 
 ### Running with Double Click (Optional)
@@ -45,10 +45,10 @@ To enable running the script with a double click:
 
 1. Open Command Prompt as administrator.
 2. Run the following commands:
-   \\\bash
+   ```bash
    assoc .ps1=Microsoft.PowerShellScript.1
    ftype Microsoft.PowerShellScript.1="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -File "%1" %*
-   \\\
+   ```
 
 ## Contributing
 
